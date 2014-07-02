@@ -1,0 +1,16 @@
+[
+{
+  "modid": "Testmod",
+  "name": "Test mod",
+  "description": "just a mod for testing.",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Matthbo"],
+  "credits": "Anyone thats awesome!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
