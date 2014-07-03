@@ -22,7 +22,7 @@ public class ConfigHandler {
 		
 	}
 	
-	public static void loadConfig(){
+	private static void loadConfig(){
 		configTest = config.getBoolean("TestingConfig", config.CATEGORY_GENERAL, false, "just for testing purposes.");
 		
 		if (config.hasChanged()){

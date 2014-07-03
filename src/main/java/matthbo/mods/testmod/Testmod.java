@@ -3,6 +3,8 @@ package matthbo.mods.testmod;
 import matthbo.mods.testmod.handler.ConfigHandler;
 import matthbo.mods.testmod.proxy.IProxy;
 import matthbo.mods.testmod.reference.Refs;
+import matthbo.mods.testmod.utility.LogHelper;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
@@ -23,17 +25,21 @@ public class Testmod {
 	public void preInit(FMLPreInitializationEvent event){
 		
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
+		FMLCommonHandler.instance().bus().register(new ConfigHandler());
 		
+		LogHelper.info("Pre Initialization Complete");
 	}
 	
 	@Mod.EventHandler
 	public void Init(FMLInitializationEvent event){
 		
+		LogHelper.info("Initialization Complete");
 	}
 	
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event){
 		
+		LogHelper.info("Post Initialization Complete");
 	}
 
 }
