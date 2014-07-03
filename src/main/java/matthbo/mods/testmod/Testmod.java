@@ -1,5 +1,6 @@
 package matthbo.mods.testmod;
 
+import matthbo.mods.testmod.handler.ConfigHandler;
 import matthbo.mods.testmod.proxy.IProxy;
 import matthbo.mods.testmod.reference.Refs;
 import cpw.mods.fml.common.Mod;
@@ -9,7 +10,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Refs.MOD_ID, name = Refs.MOD_NAME, version = Refs.VERSION)
+@Mod(modid = Refs.MOD_ID, name = Refs.MOD_NAME, version = Refs.VERSION, guiFactory = Refs.GUI_FACTORY_CLASS)
 public class Testmod {
 	
 	@Instance("Testmod")
@@ -20,6 +21,8 @@ public class Testmod {
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){
+		
+		ConfigHandler.init(event.getSuggestedConfigurationFile());
 		
 	}
 	
