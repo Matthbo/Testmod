@@ -1,11 +1,10 @@
 ## gradle
 /.gradle
 /build
-/gradle
 /gradlew
 /gradlew.bat
-/build.gradle
-/install-update-gradle.bat
+/gradle-compile-mod.bat
+/gradle-install-update.bat
 
 ## forge
 /forge-1.7.10-10.13.0.1160-changelog.txt
