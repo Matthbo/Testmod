@@ -2,6 +2,7 @@ package matthbo.mods.testmod.item;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import matthbo.mods.testmod.creativetab.CreativeTabTestmod;
 import matthbo.mods.testmod.reference.Refs;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
@@ -11,6 +12,7 @@ public class ItemTestmod extends Item {
 	
 	public ItemTestmod(){
 		super();
+		this.setCreativeTab(CreativeTabTestmod.TESTMOD_TAB);
 	}
 	
 	@Override

@@ -7,7 +7,6 @@ public class BlockFlag extends BlockTestmod {
 	public BlockFlag(){
 		super();
 		this.setBlockName("flag");
-		this.setCreativeTab(CreativeTabTestmod.TESTMOD_TAB);
 	}
 
 }

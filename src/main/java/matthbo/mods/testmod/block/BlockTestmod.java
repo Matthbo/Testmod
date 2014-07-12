@@ -2,6 +2,7 @@ package matthbo.mods.testmod.block;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import matthbo.mods.testmod.creativetab.CreativeTabTestmod;
 import matthbo.mods.testmod.reference.Refs;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -12,6 +13,7 @@ public class BlockTestmod extends Block{
 	
 	public BlockTestmod(Material material){
 		super(material);
+		this.setCreativeTab(CreativeTabTestmod.TESTMOD_TAB);
 	}
 	
 	public BlockTestmod(){
