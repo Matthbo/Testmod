@@ -1,7 +1,7 @@
 [
 {
   "modid": "Testmod",
-  "name": "Test mod",
+  "name": "Test Mod",
   "description": "just a mod for testing.",
   "version": "1.0",
   "mcversion": "1.7.10",
