@@ -7,16 +7,11 @@ import net.minecraft.item.Item;
 
 public class CreativeTabTestmod {
 	
-	public static final CreativeTabs TESTMOD_TAB = new CreativeTabs(Refs.MOD_ID){
+	public static final CreativeTabs TESTMOD_TAB = new CreativeTabs(Refs.MOD_ID.toLowerCase()){
 
 		@Override
 		public Item getTabIconItem() {
 			return ModItems.mapleLeaf;
-		}
-		
-		@Override
-		public String getTranslatedTabLabel(){
-			return "Testmod Tab";
 		}
 		
 	};
