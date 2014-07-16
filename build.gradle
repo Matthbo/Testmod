@@ -17,12 +17,12 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.7.10-1.0"
+version = "1.7.10-1.1"
 group= "matthbo.mods.testmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "testmod"
 
 minecraft {
-    version = "1.7.10-10.13.0.1180"
+    version = "1.7.10-10.13.0.1184"
 }
 
 dependencies {
