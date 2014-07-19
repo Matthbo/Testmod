@@ -11,6 +11,8 @@ public class ConfigHandler {
 	
 	public static Configuration config;
 	
+	public static final String CATEGORY_DEVELOPMENT = "dev";
+	
 	public static boolean configTest = false;
 	public static boolean debug = false;
 	
@@ -25,8 +27,7 @@ public class ConfigHandler {
 	
 	private static void loadConfig(){
 		configTest = config.getBoolean("TestingConfig", config.CATEGORY_GENERAL, false, "just for testing purposes.");
-		debug = config.getBoolean("DebugMode", config.CATEGORY_GENERAL, false, "For devs ONLY!");
-		
+		debug = config.getBoolean("DebugMode", CATEGORY_DEVELOPMENT, false, "For devs ONLY!");
 		if (config.hasChanged()){
 			config.save();
 		}
