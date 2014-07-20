@@ -1,5 +1,6 @@
 package matthbo.mods.testmod;
 
+import net.minecraftforge.oredict.OreDictionary;
 import matthbo.mods.testmod.handler.ConfigHandler;
 import matthbo.mods.testmod.handler.EventHandler;
 import matthbo.mods.testmod.init.ModBlocks;
@@ -57,6 +58,10 @@ public class Testmod {
 	public void postInit(FMLPostInitializationEvent event){
 		
 		LogHelper.info("Post Initialization Complete");
+		
+		/*for(String oreName : OreDictionary.getOreNames()){
+			LogHelper.info(oreName);
+		}*/
 	}
 
 }
