@@ -1,5 +1,8 @@
 item.testmod:mapleLeaf.name=Esdoorn Blad
+item.testmod:devTool.name=Dev Gereedschap
+
 tile.testmod:flag.name=Nederlandse Vlag
+
 itemGroup.testmod=TestMod Tab
 
 chat.command.testmod.devmode=[TestMod] Dev modus staat AAN!
