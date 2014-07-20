@@ -5,6 +5,7 @@ import java.io.File;
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import matthbo.mods.testmod.reference.Refs;
+import matthbo.mods.testmod.utility.LogHelper;
 import net.minecraftforge.common.config.Configuration;
 
 public class ConfigHandler {
@@ -14,7 +15,7 @@ public class ConfigHandler {
 	public static final String CATEGORY_DEVELOPMENT = "dev";
 	
 	public static boolean configTest = false;
-	public static boolean debug = false;
+	public static boolean dev = false;
 	
 	public static void init(File configFile){
 		
@@ -27,7 +28,10 @@ public class ConfigHandler {
 	
 	private static void loadConfig(){
 		configTest = config.getBoolean("TestingConfig", config.CATEGORY_GENERAL, false, "just for testing purposes.");
-		debug = config.getBoolean("DebugMode", CATEGORY_DEVELOPMENT, false, "For devs ONLY!");
+		dev = config.getBoolean("DevMode", CATEGORY_DEVELOPMENT, false, "For devs ONLY!");
+		
+		if(dev == true) LogHelper.warn("Devmode is ON! if you are NOT a developer, turn devmode off in the config!");
+		
 		if (config.hasChanged()){
 			config.save();
 		}

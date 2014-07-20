@@ -1,6 +1,7 @@
 package matthbo.mods.testmod;
 
 import matthbo.mods.testmod.handler.ConfigHandler;
+import matthbo.mods.testmod.handler.EventHandler;
 import matthbo.mods.testmod.init.ModBlocks;
 import matthbo.mods.testmod.init.ModItems;
 import matthbo.mods.testmod.proxy.IProxy;
@@ -37,7 +38,10 @@ public class Testmod {
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigHandler());
 		
+		FMLCommonHandler.instance().bus().register(new EventHandler());
+		
 		ModItems.init();
+		if(ConfigHandler.dev == true) ModItems.devmodeInit();
 		ModBlocks.init();
 		
 		LogHelper.info("Pre Initialization Complete");
