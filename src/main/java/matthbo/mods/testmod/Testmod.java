@@ -59,9 +59,11 @@ public class Testmod {
 		
 		LogHelper.info("Post Initialization Complete");
 		
-		/*for(String oreName : OreDictionary.getOreNames()){
-			LogHelper.info(oreName);
-		}*/
+		if(ConfigHandler.dev == true){
+			for(String oreName : OreDictionary.getOreNames()){
+				LogHelper.info(oreName);
+			}
+		}
 	}
 
 }
