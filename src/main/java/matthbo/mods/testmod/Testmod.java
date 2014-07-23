@@ -5,6 +5,7 @@ import matthbo.mods.testmod.handler.ConfigHandler;
 import matthbo.mods.testmod.handler.EventHandler;
 import matthbo.mods.testmod.init.ModBlocks;
 import matthbo.mods.testmod.init.ModItems;
+import matthbo.mods.testmod.init.Recipes;
 import matthbo.mods.testmod.proxy.IProxy;
 import matthbo.mods.testmod.reference.Refs;
 import matthbo.mods.testmod.utility.LogHelper;
@@ -50,6 +51,7 @@ public class Testmod {
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
+		Recipes.init();
 		
 		LogHelper.info("Initialization Complete");
 	}
