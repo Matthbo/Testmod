@@ -28,7 +28,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Refs.MOD_ID, name = Refs.MOD_NAME, version = Refs.VERSION, guiFactory = Refs.GUI_FACTORY_CLASS)
 public class Testmod {
 	
-	@Instance("Testmod")
+	@Instance(Refs.MOD_ID)
 	public static Testmod instance;
 	
 	@SidedProxy(clientSide = Refs.CLIENT_PROXY_CLASS, serverSide = Refs.SERVER_PROXY_CLASS)

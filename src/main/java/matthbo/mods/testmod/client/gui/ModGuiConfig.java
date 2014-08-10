@@ -35,9 +35,9 @@ public class ModGuiConfig extends GuiConfig {
 	private static List<IConfigElement> getConfigElement(){
 		List<IConfigElement> list = new ArrayList<IConfigElement>();
 		//list.addAll((new ConfigElement(ConfigHandler.config.getCategory(Configuration.CATEGORY_GENERAL))).getChildElements());
-		list.add(new DummyCategoryElement("General", "testmod.configgui.ctgy.testmodConfigGeneral", ModGeneralEntry.class));
+		list.add(new DummyCategoryElement("General", "testmod.configgui.ctgy.configGeneral", ModGeneralEntry.class));
 		//list.addAll((new ConfigElement(ConfigHandler.config.getCategory(ConfigHandler.CATEGORY_DEVELOPMENT))).getChildElements());
-		list.add(new DummyCategoryElement("Dev", "testmod.configgui.ctgy.testmodConfigDevelopment", ModDevelopmentEntry.class));
+		list.add(new DummyCategoryElement("Dev", "testmod.configgui.ctgy.configDevelopment", ModDevelopmentEntry.class));
 		return list;
 	}
 	
@@ -54,7 +54,7 @@ public class ModGuiConfig extends GuiConfig {
 					this.owningScreen.modID, 
 					false, 
 					false, 
-					I18n.format("testmod.configgui.ctgy.testmodConfigGeneral"));
+					I18n.format("testmod.configgui.ctgy.configGeneral"));
 		}
 		
 	}
@@ -72,7 +72,7 @@ public class ModGuiConfig extends GuiConfig {
 					this.owningScreen.modID, 
 					false, 
 					false, 
-					I18n.format("testmod.configgui.ctgy.testmodConfigDevelopment"));
+					I18n.format("testmod.configgui.ctgy.configDevelopment"));
 		}
 		
 	}

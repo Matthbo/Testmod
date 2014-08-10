@@ -6,3 +6,6 @@ tile.testmod:flag.name=Nederlandse Vlag
 itemGroup.testmod=TestMod Tab
 
 chat.command.testmod.devmode=[TestMod] Dev modus staat AAN!
+
+testmod.configgui.ctgy.configGeneral.tooltip=Je kan hier de algemene instellingen veranderen.
+testmod.configgui.ctgy.configDevelopment.tooltip=Je kan hier de development instellingen veranderen.

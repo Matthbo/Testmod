@@ -6,3 +6,8 @@ tile.testmod:flag.name=Dutch Flag
 itemGroup.testmod=TestMod Tab
 
 chat.command.testmod.devmode=[TestMod] Dev mode is ON!
+
+testmod.configgui.ctgy.configGeneral=General Configuration
+testmod.configgui.ctgy.configGeneral.tooltip=You can edit the general configuration options here.
+testmod.configgui.ctgy.configDevelopment=Development Configuration
+testmod.configgui.ctgy.configDevelopment.tooltip=You can edit the development configuration options here.
