@@ -10,4 +10,9 @@ public class Refs {
 	public static final String SERVER_PROXY_CLASS = "matthbo.mods.testmod.proxy.ServerProxy";
 	public static final String GUI_FACTORY_CLASS = "matthbo.mods.testmod.client.gui.GuiFactory";
 	
+	public static final String CONFIG_LANGKEY_GENERAL = "testmod.configgui.ctgy.configGeneral";
+	public static final String CONFIG_LANGKEY_DEV = "testmod.configgui.ctgy.configDevelopment";
+	
+	public static final String CHAT_LANGKEY_DEVMODE = "testmod.chat.command.devmode";
+	
 }

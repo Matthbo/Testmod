@@ -15,7 +15,7 @@ public class EventHandler {
 	@SubscribeEvent
 	public void onPlayerLogin(PlayerLoggedInEvent event){
 		if(ConfigHandler.dev == true){
-			event.player.addChatMessage(new ChatComponentTranslation("chat.command.testmod.devmode"));
+			event.player.addChatMessage(new ChatComponentTranslation(Refs.CHAT_LANGKEY_DEVMODE));
 		}
 	}
 
