@@ -40,8 +40,6 @@ public class Testmod {
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigHandler());
 		
-		FMLCommonHandler.instance().bus().register(new EventHandler());
-		
 		ModItems.init();
 		if(ConfigHandler.dev == true) ModItems.devmodeInit();
 		ModBlocks.init();
@@ -52,6 +50,8 @@ public class Testmod {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
 		Recipes.init();
+		
+		FMLCommonHandler.instance().bus().register(new EventHandler());
 		
 		LogHelper.info("Initialization Complete");
 	}
