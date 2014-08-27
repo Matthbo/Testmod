@@ -1,6 +1,7 @@
 package matthbo.mods.testmod;
 
 import net.minecraftforge.oredict.OreDictionary;
+import matthbo.mods.testmod.client.handler.KeyInputHandler;
 import matthbo.mods.testmod.handler.ConfigHandler;
 import matthbo.mods.testmod.handler.EventHandler;
 import matthbo.mods.testmod.init.ModBlocks;
@@ -40,6 +41,8 @@ public class Testmod {
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigHandler());
 		
+		proxy.registerKeyBindings();
+		
 		ModItems.init();
 		if(ConfigHandler.dev == true) ModItems.devmodeInit();
 		ModBlocks.init();
@@ -50,6 +53,8 @@ public class Testmod {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
 		Recipes.init();
+		
+		FMLCommonHandler.instance().bus().register(new KeyInputHandler());
 		
 		FMLCommonHandler.instance().bus().register(new EventHandler());
 		

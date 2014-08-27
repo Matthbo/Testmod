@@ -1,6 +1,6 @@
 package matthbo.mods.testmod.reference;
 
-public class Refs {
+public final class Refs {
 	
 	public static final String MOD_ID = "Testmod";
 	public static final String MOD_NAME = "Test Mod";
@@ -17,5 +17,10 @@ public class Refs {
 	
 	//chat
 	public static final String CHAT_LANGKEY_DEVMODE = "testmod.chat.command.devmode";
+	
+	//keys
+	public static final String KEY_CATEGORY = "testmod.keys.category";
+	public static final String KEY_CHARGE = "testmod.keys.charge";
+	public static final String KEY_RELEASE = "testmod.keys.release";
 	
 }

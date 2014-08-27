@@ -1,13 +1,23 @@
+# Items
 item.testmod:mapleLeaf.name=Maple Leaf
 item.testmod:devTool.name=Dev Tool
 
+# Blocks
 tile.testmod:flag.name=Dutch Flag
 
+# Tabs
 itemGroup.testmod=TestMod Tab
 
-chat.command.testmod.devmode=[TestMod] Dev mode is ON!
+# Chat
+testmod.chat.command.devmode=[TestMod] Dev mode is ON!
 
+# Config
 testmod.configgui.ctgy.configGeneral=General Configuration
 testmod.configgui.ctgy.configGeneral.tooltip=You can edit the general configuration options here.
 testmod.configgui.ctgy.configDevelopment=Development Configuration
 testmod.configgui.ctgy.configDevelopment.tooltip=You can edit the development configuration options here.
+
+# Keys
+testmod.keys.category=Testmod
+testmod.keys.charge=Charge
+testmod.keys.release=Release

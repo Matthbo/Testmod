@@ -1,11 +1,21 @@
+# Items
 item.testmod:mapleLeaf.name=Esdoorn Blad
 item.testmod:devTool.name=Dev Gereedschap
 
+# Blocks
 tile.testmod:flag.name=Nederlandse Vlag
 
+# Tabs
 itemGroup.testmod=TestMod Tab
 
-chat.command.testmod.devmode=[TestMod] Dev modus staat AAN!
+# Chat
+testmod.chat.command.devmode=[TestMod] Dev modus staat AAN!
 
+# Config
 testmod.configgui.ctgy.configGeneral.tooltip=Je kan hier de algemene instellingen veranderen.
 testmod.configgui.ctgy.configDevelopment.tooltip=Je kan hier de development instellingen veranderen.
+
+# Keys
+testmod.keys.category=Testmod
+testmod.keys.charge=Laden
+testmod.keys.release=Lossen
