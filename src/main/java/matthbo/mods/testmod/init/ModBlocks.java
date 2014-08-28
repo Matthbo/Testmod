@@ -1,11 +1,12 @@
 package matthbo.mods.testmod.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.GameRegistry.ObjectHolder;
 import matthbo.mods.testmod.block.BlockFlag;
 import matthbo.mods.testmod.block.BlockTestmod;
 import matthbo.mods.testmod.reference.Refs;
 
-@GameRegistry.ObjectHolder(Refs.MOD_ID)
+@ObjectHolder(Refs.MOD_ID)
 public class ModBlocks {
 	
 	public static final BlockTestmod flag = new BlockFlag();
