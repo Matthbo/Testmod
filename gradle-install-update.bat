@@ -1,2 +1,2 @@
 .gradle\gradle.log
-gradlew.bat setupDecompWorkspace eclipse --refresh-dependencies
+gradlew.bat setupDecompWorkspace idea --refresh-dependencies

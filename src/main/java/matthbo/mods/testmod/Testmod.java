@@ -10,13 +10,13 @@ import matthbo.mods.testmod.init.Recipes;
 import matthbo.mods.testmod.proxy.IProxy;
 import matthbo.mods.testmod.reference.Refs;
 import matthbo.mods.testmod.utility.LogHelper;
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 
 /**
@@ -44,7 +44,7 @@ public class Testmod {
 		proxy.registerKeyBindings();
 		
 		ModItems.init();
-		if(ConfigHandler.dev == true) ModItems.devmodeInit();
+		if(ConfigHandler.dev) ModItems.devmodeInit();
 		ModBlocks.init();
 		
 		LogHelper.info("Pre Initialization Complete");
@@ -66,7 +66,7 @@ public class Testmod {
 		
 		LogHelper.info("Post Initialization Complete");
 		
-		if(ConfigHandler.dev == true){
+		if(ConfigHandler.dev){
 			for(String oreName : OreDictionary.getOreNames()){
 				LogHelper.info(oreName);
 			}

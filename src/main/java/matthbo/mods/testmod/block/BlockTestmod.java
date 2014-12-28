@@ -1,7 +1,8 @@
 package matthbo.mods.testmod.block;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IIconCreator;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import matthbo.mods.testmod.creativetab.CreativeTabTestmod;
 import matthbo.mods.testmod.reference.Refs;
 import net.minecraft.block.Block;
@@ -28,7 +29,7 @@ public class BlockTestmod extends Block{
 
     @Override
     @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister iconRegister)
+    public void registerBlockIcons(IIconCreator iconRegister)
     {
         blockIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
     }

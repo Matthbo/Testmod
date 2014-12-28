@@ -1,7 +1,6 @@
 package matthbo.mods.testmod.init;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import matthbo.mods.testmod.handler.ConfigHandler;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import matthbo.mods.testmod.item.ItemDevTool;
 import matthbo.mods.testmod.item.ItemMapleLeaf;
 import matthbo.mods.testmod.item.ItemTestmod;
