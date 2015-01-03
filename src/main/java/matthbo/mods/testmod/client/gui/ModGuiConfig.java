@@ -7,14 +7,12 @@ import matthbo.mods.testmod.handler.ConfigHandler;
 import matthbo.mods.testmod.reference.Refs;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.resources.I18n;
-import net.minecraftforge.common.config.ConfigCategory;
 import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.common.config.Configuration;
-import cpw.mods.fml.client.config.GuiConfig;
-import cpw.mods.fml.client.config.GuiConfigEntries;
-import cpw.mods.fml.client.config.GuiConfigEntries.CategoryEntry;
-import cpw.mods.fml.client.config.IConfigElement;
-import cpw.mods.fml.client.config.DummyConfigElement.DummyCategoryElement;
+import net.minecraftforge.fml.client.config.DummyConfigElement;
+import net.minecraftforge.fml.client.config.GuiConfig;
+import net.minecraftforge.fml.client.config.GuiConfigEntries;
+import net.minecraftforge.fml.client.config.IConfigElement;
 
 /**This class is NOT following pahimar's LetModReboot!
  * 
@@ -35,13 +33,13 @@ public class ModGuiConfig extends GuiConfig {
 	private static List<IConfigElement> getConfigElement(){
 		List<IConfigElement> list = new ArrayList<IConfigElement>();
 		//list.addAll((new ConfigElement(ConfigHandler.config.getCategory(Configuration.CATEGORY_GENERAL))).getChildElements());
-		list.add(new DummyCategoryElement("General", Refs.CONFIG_LANGKEY_GENERAL, ModGeneralEntry.class));
+		list.add(new DummyConfigElement.DummyCategoryElement("General", Refs.CONFIG_LANGKEY_GENERAL, ModGeneralEntry.class));
 		//list.addAll((new ConfigElement(ConfigHandler.config.getCategory(ConfigHandler.CATEGORY_DEVELOPMENT))).getChildElements());
-		list.add(new DummyCategoryElement("Dev", Refs.CONFIG_LANGKEY_DEV, ModDevelopmentEntry.class));
+		list.add(new DummyConfigElement.DummyCategoryElement("Dev", Refs.CONFIG_LANGKEY_DEV, ModDevelopmentEntry.class));
 		return list;
 	}
 	
-	public static class ModGeneralEntry extends CategoryEntry{
+	public static class ModGeneralEntry extends GuiConfigEntries.CategoryEntry {
 
 		public ModGeneralEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);
@@ -59,7 +57,7 @@ public class ModGuiConfig extends GuiConfig {
 		
 	}
 	
-	public static class ModDevelopmentEntry extends CategoryEntry{
+	public static class ModDevelopmentEntry extends GuiConfigEntries.CategoryEntry{
 
 		public ModDevelopmentEntry(GuiConfig owningScreen, GuiConfigEntries owningEntryList, IConfigElement configElement) {
 			super(owningScreen, owningEntryList, configElement);

@@ -1,7 +1,7 @@
 package matthbo.mods.testmod.init;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.GameRegistry.ObjectHolder;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 import matthbo.mods.testmod.block.BlockFlag;
 import matthbo.mods.testmod.block.BlockTestmod;
 import matthbo.mods.testmod.reference.Refs;

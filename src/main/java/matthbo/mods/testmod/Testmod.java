@@ -52,6 +52,7 @@ public class Testmod {
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
+		proxy.textureFix();
 		Recipes.init();
 		
 		FMLCommonHandler.instance().bus().register(new KeyInputHandler());

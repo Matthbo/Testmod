@@ -3,8 +3,8 @@ package matthbo.mods.testmod.client.handler;
 import matthbo.mods.testmod.client.settings.KeyBindings;
 import matthbo.mods.testmod.reference.Key;
 import matthbo.mods.testmod.utility.LogHelper;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.common.gameevent.InputEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.InputEvent;
 
 public class KeyInputHandler {
 	

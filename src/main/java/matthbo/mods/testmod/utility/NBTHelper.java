@@ -3,9 +3,10 @@ package matthbo.mods.testmod.utility;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 
+@SuppressWarnings("unused")
 public class NBTHelper {
 
-	 public static boolean hasTag(ItemStack itemStack, String keyName)
+	 /*public static boolean hasTag(ItemStack itemStack, String keyName)
 	    {
 	        return itemStack != null && itemStack.stackTagCompound != null && itemStack.stackTagCompound.hasKey(keyName);
 	    }
@@ -23,7 +24,7 @@ public class NBTHelper {
 	     *
 	     * @param itemStack
 	     *         The ItemStack for which its NBT Tag Compound is being checked for initialization
-	     */
+	     *
 	    private static void initNBTTagCompound(ItemStack itemStack)
 	    {
 	        if (itemStack.stackTagCompound == null)
@@ -39,7 +40,6 @@ public class NBTHelper {
 	        itemStack.stackTagCompound.setLong(keyName, keyValue);
 	    }
 
-	    // String
 	    public static String getString(ItemStack itemStack, String keyName)
 	    {
 	        initNBTTagCompound(itemStack);
@@ -59,7 +59,6 @@ public class NBTHelper {
 	        itemStack.stackTagCompound.setString(keyName, keyValue);
 	    }
 
-	    // boolean
 	    public static boolean getBoolean(ItemStack itemStack, String keyName)
 	    {
 	        initNBTTagCompound(itemStack);
@@ -79,7 +78,6 @@ public class NBTHelper {
 	        itemStack.stackTagCompound.setBoolean(keyName, keyValue);
 	    }
 
-	    // byte
 	    public static byte getByte(ItemStack itemStack, String keyName)
 	    {
 	        initNBTTagCompound(itemStack);
@@ -99,7 +97,6 @@ public class NBTHelper {
 	        itemStack.stackTagCompound.setByte(keyName, keyValue);
 	    }
 
-	    // short
 	    public static short getShort(ItemStack itemStack, String keyName)
 	    {
 	        initNBTTagCompound(itemStack);
@@ -119,7 +116,6 @@ public class NBTHelper {
 	        itemStack.stackTagCompound.setShort(keyName, keyValue);
 	    }
 
-	    // int
 	    public static int getInt(ItemStack itemStack, String keyName)
 	    {
 	        initNBTTagCompound(itemStack);
@@ -139,7 +135,6 @@ public class NBTHelper {
 	        itemStack.stackTagCompound.setInteger(keyName, keyValue);
 	    }
 
-	    // long
 	    public static long getLong(ItemStack itemStack, String keyName)
 	    {
 	        initNBTTagCompound(itemStack);
@@ -152,7 +147,6 @@ public class NBTHelper {
 	        return itemStack.stackTagCompound.getLong(keyName);
 	    }
 
-	    // float
 	    public static float getFloat(ItemStack itemStack, String keyName)
 	    {
 	        initNBTTagCompound(itemStack);
@@ -172,7 +166,6 @@ public class NBTHelper {
 	        itemStack.stackTagCompound.setFloat(keyName, keyValue);
 	    }
 
-	    // double
 	    public static double getDouble(ItemStack itemStack, String keyName)
 	    {
 	        initNBTTagCompound(itemStack);
@@ -190,6 +183,6 @@ public class NBTHelper {
 	        initNBTTagCompound(itemStack);
 
 	        itemStack.stackTagCompound.setDouble(keyName, keyValue);
-	    }
+	    }*/
 	
 }

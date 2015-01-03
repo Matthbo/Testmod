@@ -7,4 +7,8 @@ public class ServerProxy extends CommonProxy{
 		//NOOP
 	}
 
+	public void textureFix(){
+		//NOOP
+	}
+
 }
