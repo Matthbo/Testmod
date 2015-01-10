@@ -20,7 +20,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 
 /**
- * A mod for testing, following the LetsModReboot series from pahimar.
+ * A mod for testing, following the LetsModReboot series from pahimar. kinda... updated to 1.8 so....
  * Made/Coded by Matthbo!
  * 
  * @author Matthbo
